@@ -1,5 +1,5 @@
 # cookieclicker
-
+https://akenaftw.github.io/cookieclicker/
 My first goal with JS is to create a nice looking cookieclicker. Wish me luck!
 
 Log:
