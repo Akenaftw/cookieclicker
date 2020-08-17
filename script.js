@@ -1,56 +1,56 @@
 function update(){
-    document.getElementById('text').value=cookiecount;
-    document.title = cookiecount + "cookies";
-    document.getElementById("amountautoclick") .innerHTML = "You know " + autoclick + " hotkeys";
-    document.getElementById("costautoclick") .innerHTML = "Upgrade costs " + ((autoclick+1) * 12) + " lines of code";
+    document.getElementById('text').value=linecount;
+    document.title = linecount + "cookies";
+    document.getElementById("amounthtm") .innerHTML = "You know " + htm + " hotkeys";
+    document.getElementById("costhtm") .innerHTML = "Upgrade costs " + ((htm+1) * 12) + " lines of code";
     document.getElementById("amountcss"). innerHTML= "You know " + css + " hotkeys";
     document.getElementById("costcss") .innerHTML= "Upgrade costs " + ((css+1) * 15) + " lines of code";
-    document.getElementById("linespersecond" ) .innerHTML= "You are writing " +(((autoclick)+(css*2))*multiplier) + " lines per/s";
+    document.getElementById("linespersecond" ) .innerHTML= "You are writing " +(((htm)+(css*2))*multiplier) + " lines per/s";
 
 }
-var cookiecount = 0;
-var autoclick = 0;
+var linecount = 0;
+var htm = 0;
 var css = 0;
 var multiplier = 1;
 
 function timer(){
-    cookiecount = cookiecount + autoclick;
-    cookiecount = cookiecount + css;
+    linecount = linecount + htm;
+    linecount = linecount + css;
     update()
 }
 setInterval(timer,1000)
 
 function add(){
-    cookiecount = cookiecount + 1;
+    linecount = linecount + 1;
     update();
 }
 
 function save(){
-    localStorage.setItem("cookiecount",cookiecount);
-    localStorage.setItem("autoclick", autoclick);
+    localStorage.setItem("linecount", linecount);
+    localStorage.setItem("htm", htm);
     localStorage.setItem("css", css);
 
 }
 
 function load(){
-    cookiecount= localStorage.getItem("cookiecount");
-    cookiecount= parseInt(cookiecount);
-    autoclick -localStorage.getItem(" autoclick");
-    autoclick= parseInt(autoclick);
-    css -localStorage.getItem("css");
+    linecount= localStorage.getItem("linecount");
+    linecount= parseInt(linecount);
+    htm= localStorage.getItem(" htm");
+    htm= parseInt(htm);
+    css= localStorage.getItem("css");
     css= parseInt(css);
     update();
 }
-function buyautoclick(){
-    if (cookiecount >= ((autoclick+1) * 12)){
-        cookiecount = cookiecount - ((autoclick + 1) * 12);
-        autoclick = autoclick + 1;
+function buyhtm(){
+    if (linecount >= ((htm+1) * 12)){
+        linecount = linecount - ((htm + 1) * 12);
+        htm = htm + 1;
         update()
         }
 }
     function buycss(){
-        if (cookiecount >= ((css+1) * 15)){
-            cookiecount = cookiecount - ((css + 1) * 15);
+        if (linecount >= ((css+1) * 15)){
+            linecount = linecount - ((css + 1) * 15);
             css = css + 1;
             update()
         }
