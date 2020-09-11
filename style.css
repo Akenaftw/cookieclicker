@@ -1,5 +1,22 @@
-#htmlbutton{
-    width: 300px;
-    height: 200px;
+
+
+.levelWrapper{
+    display: flex;
+    flex-direction: row;
 }
 
+.buyHtm{
+    float: left;
+}
+
+.buyCss{
+    float: left;
+}
+
+.buyJavasc{
+    float: left;
+}
+
+.buyPhp{
+    float: left;
+}

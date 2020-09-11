@@ -20,26 +20,37 @@ lines of code!
 <button><a href="#" onclick="save()">Save</a></button>
 <button><a href="#" onclick="load()">Load</a></button>
 <br><br>
-<button><a href="#" onclick="buyhtm()"><img src="images/html5.png" id="htmlbutton" alt="keyboard"></a>
-</button>
-<p id="costhtm"> Upgrade costs 12 lines of code </p>
-<p id="amounthtm"> You know 0 hotkeys</p>
-<br><br>
 
-<p>Upgrade your CSS Skills</p>
-<button><a href="#" onclick="buycss()"><img src="images/css.png" id="css" alt="css logo"></a></button>
-<p id="costcss"> Upgrade costs 60 lines of code</p>
-<p id="amountcss"> You know 0 hotkeys</p>
+<div class="levelWrapper">
+    <div class="buyHtm">
+        <p>Upgrade your HTML skills</p>
+        <button><a href="#" onclick="buyhtm()"><img src="images/html.png" id="htmlbutton" alt="keyboard"></a>
+        </button>
+        <p id="costhtm"> Upgrade costs 12 lines of code </p>
+        <p id="amounthtm"> You know 0 hotkeys</p>
+    </div>
 
-<p>Upgrade your Javascript Skills</p>
-<button><a href="#" onclick="buyjavasc()"><img src="images/javascript.png" id="javasc" alt="javascript logo"></a></button>
-<p id="costjavasc"> Upgrade costs 200 lines of code</p>
-<p id="amountjavasc"> You know 0 hotkeys</p>
-
-<p>Upgrade your PHP Skills</p>
-<button><a href="#" onclick="buyphp()"><img src="images/php.png" id="php" alt="php logo"></a></button>
-<p id="costphp"> Upgrade costs 600 lines of code</p>
-<p id="amountphp"> You know 0 hotkeys</p>
+    <div class="buyCss">
+        <p>Upgrade your CSS Skills</p>
+        <button><a href="#" onclick="buycss()"><img src="images/css.png" id="css" alt="css logo"></a></button>
+        <p id="costcss"> Upgrade costs 60 lines of code</p>
+        <p id="amountcss"> You know 0 hotkeys</p>
+    </div>
+    <div class="buyJavasc">
+        <p>Upgrade your Javascript Skills</p>
+        <button><a href="#" onclick="buyjavasc()"><img src="images/JS.png" id="javasc"
+                                                       alt="javascript logo"></a>
+        </button>
+        <p id="costjavasc"> Upgrade costs 200 lines of code</p>
+        <p id="amountjavasc"> You know 0 hotkeys</p>
+    </div>
+    <div class="buyPhp">
+        <p>Upgrade your PHP Skills</p>
+        <button><a href="#" onclick="buyphp()"><img src="images/php.png" id="php" alt="php logo"></a></button>
+        <p id="costphp"> Upgrade costs 600 lines of code</p>
+        <p id="amountphp"> You know 0 hotkeys</p>
+    </div>
+</div>
 
 </body>
 </html>
